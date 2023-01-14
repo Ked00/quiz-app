@@ -14,7 +14,6 @@ export const MainNavbar = () => {
           <Points />
           <Avatar
             alt="user profile picture."
-            src={require("../images/add.png")}
           />
         </div>
       </Container>
