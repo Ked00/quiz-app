@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 export const Points = () => {
-    const [points, setPoints] = useState(5000)
+    const [points, setPoints] = useState(0)
   return (
-    <h3 className="text-primary mt-2">{points}</h3>
+    <h3 className="mt-2">{points}</h3>
   )
 }

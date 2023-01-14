@@ -1,17 +1,17 @@
 import React from "react";
-import {Avatar} from "@mui/material";
 
 import {MainNavbar} from "../../components/MainNavbar";
-import {Subject} from "../quizzes/QuizItems/Subject";
+import {QuizCard} from "./QuizListComponents/QuizCard";
 
 export const Quiz_list = () => {
   return (
-    <div className="bg-dark vh-100">
+    <div className="vh-100" style={{backgroundColor: "lavender"}}>
       <MainNavbar />
 
-      <h1 className="text-white mt-5 p-3">Communication</h1>
+      <h1 className="text-dark mt-5 p-3">Communication</h1>
       <div>
-        <Subject />
+        <QuizCard alternative="obama" progress={100} topic="Pitching method" />
+        <QuizCard alternative="obama" progress={33} topic="Framing" />
       </div>
     </div>
   );
