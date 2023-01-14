@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import {Quiz_list} from "./views/quizzes/Quiz_list"
+import {Quiz_list} from "./views/quizzes/QuizListPage"
 
 export function App() {
   return (

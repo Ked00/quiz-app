@@ -1,6 +1,8 @@
 import React from "react";
-import {MainNavbar} from "../../components/MainNavbar";
 import {Avatar} from "@mui/material";
+
+import {MainNavbar} from "../../components/MainNavbar";
+import {Subject} from "../quizzes/QuizItems/Subject";
 
 export const Quiz_list = () => {
   return (
@@ -9,7 +11,7 @@ export const Quiz_list = () => {
 
       <h1 className="text-white mt-5 p-3">Communication</h1>
       <div>
-        {/* <Avatar alt="president obama giving a speech" src={require("")} /> */}
+        <Subject />
       </div>
     </div>
   );
