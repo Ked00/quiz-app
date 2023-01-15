@@ -16,9 +16,9 @@ export const Quiz = () => {
             What are three methods of pitching ?
           </h1>
 
-          <FormGroup className="border border-dark">
-            <Row className="d-flex justify-content-center mt-5" xs={1} md={2}>
-              <Col className="border border-dark p-3 mb-2 mx-2" md={3}>
+          <FormGroup>
+            <Row className="d-flex justify-content-center mt-5" xs={1} md={3}>
+              <Col className="border border-dark p-3 mb-2 mx-2">
                 <FormControlLabel
                   control={<Checkbox />}
                   label="Inclusive"
@@ -27,7 +27,43 @@ export const Quiz = () => {
                 />
               </Col>
 
-              <Col className="border border-dark p-3 mb-2 mx-2" md={3}>
+              <Col className="border border-dark p-3 mb-2 mx-2">
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Exclusive"
+                  value="Exclusive"
+                  // onClick={showValue}
+                />
+              </Col>
+
+              <Col className="border border-dark p-3 mb-2 mx-2">
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Exclusive"
+                  value="Exclusive"
+                  // onClick={showValue}
+                />
+              </Col>
+
+              <Col className="border border-dark p-3 mb-2 mx-2">
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Exclusive"
+                  value="Exclusive"
+                  // onClick={showValue}
+                />
+              </Col>
+
+              <Col className="border border-dark p-3 mb-2 mx-2">
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Exclusive"
+                  value="Exclusive"
+                  // onClick={showValue}
+                />
+              </Col>
+
+              <Col className="border border-dark p-3 mb-2 mx-2">
                 <FormControlLabel
                   control={<Checkbox />}
                   label="Exclusive"
