@@ -1,13 +1,14 @@
 import React, {ChangeEvent, useState} from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import {
-  Checkbox,
   FormGroup,
-  FormControlLabel,
   LinearProgress,
 } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import {AnswerBox} from "./AnswerCheckBox/AnswerBox";
+import { Logo } from "../../components/Logo";
 
 export const Quiz = () => {
   return (
@@ -15,11 +16,10 @@ export const Quiz = () => {
       className="vh-100 position-static"
       style={{backgroundColor: "lavender"}}
     >
-      <div className="d-flex p-3">
-        <Button href="/">Back</Button>
-        <div className="text-center w-100 me-5">
-          <h3>Pitching</h3>
-        </div>
+      <div className="d-flex justify-content-between p-3">
+        <Logo />
+        <h3>Pitching</h3>
+        <Button>Save Progress</Button>
       </div>
 
       <div className="h-100 d-flex align-items-center">
@@ -40,14 +40,19 @@ export const Quiz = () => {
               className="text-end p-3 rounded border border-white shadow-lg w-75 d-flex align-items-center justify-content-between"
               md={10}
             >
-              <Button variant="primary">Back</Button>
+              <Button variant="primary">
+                <ArrowBackIcon />
+              </Button>
               <LinearProgress
                 variant="determinate"
                 value={50}
                 sx={{width: "60%"}}
               />
               <Button variant="primary" className="w-25">
-                Submit
+                Next Question
+                <span className="ms-4">
+                  <ArrowForwardIcon />
+                </span>
               </Button>
             </Col>
           </Row>

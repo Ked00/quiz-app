@@ -3,12 +3,13 @@ import {Navbar, Container} from "react-bootstrap/";
 import {Avatar, AppBar} from "@mui/material";
 
 import {Points} from "../points/Points";
+import {Logo} from "./Logo";
 
 export const MainNavbar = () => {
   return (
     <AppBar position="static" sx={{backgroundColor: "#d84f2a"}}>
       <Container className="d-flex align-items-center justify-content-between">
-        <Navbar.Brand>The basics</Navbar.Brand>
+        <Logo />
 
         <div className="d-flex align-items-center h-100">
           <Points />

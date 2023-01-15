@@ -21,7 +21,7 @@ export const QuizCard = (props: Props) => {
           <a href="/quiz">
             <Avatar
               alt={props.alternative}
-              src={require("../../../images/obama.jpg")}
+              src={require("../../../images/typescriptLogo.png")}
               className="float-start me-3"
               sx={{width: 60, height: 60}}
             />

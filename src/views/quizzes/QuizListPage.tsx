@@ -8,10 +8,16 @@ export const Quiz_list = () => {
     <div className="vh-100" style={{backgroundColor: "lavender"}}>
       <MainNavbar />
 
-      <h1 className="text-dark mt-5 p-3">Communication</h1>
+      <h1 className="text-dark mt-5 p-3">Typescript</h1>
       <div>
-        <QuizCard alternative="obama" progress={100} topic="Pitching method" />
-        <QuizCard alternative="obama" progress={33} topic="Framing" />
+        <QuizCard alternative="obama" progress={100} topic="Types" />
+        <QuizCard alternative="obama" progress={100} topic="Type Annotations" />
+        <QuizCard alternative="obama" progress={100} topic="Type Inference" />
+        <QuizCard alternative="obama" progress={100} topic="Type Aliases" />
+        <QuizCard alternative="obama" progress={33} topic="Arrays" />
+        <QuizCard alternative="obama" progress={100} topic="Function Types" />
+        <QuizCard alternative="obama" progress={100} topic="Union Types" />
+        <QuizCard alternative="obama" progress={100} topic="Typing objects" />
       </div>
     </div>
   );
