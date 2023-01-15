@@ -7,10 +7,21 @@ import {
   LinearProgress,
 } from "@mui/material";
 
+import {AnswerBox} from "./AnswerCheckBox/AnswerBox";
+
 export const Quiz = () => {
   return (
-    <div className="vh-100 position-static" style={{backgroundColor: "lavender"}}>
-      <h3 className="text-center p-3">Pitching</h3>
+    <div
+      className="vh-100 position-static"
+      style={{backgroundColor: "lavender"}}
+    >
+      <div className="d-flex p-3">
+        <Button href="/">Back</Button>
+        <div className="text-center w-100 me-5">
+          <h3>Pitching</h3>
+        </div>
+      </div>
+
       <div className="h-100 d-flex align-items-center">
         <div className="h-75 w-100">
           <h1 className="text-center p-3">
@@ -19,59 +30,8 @@ export const Quiz = () => {
 
           <FormGroup>
             <Row className="d-flex justify-content-center mt-4" xs={1} md={3}>
-              <Col className="border border-dark p-3 mb-2 mx-2">
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Inclusive"
-                  value="Inclusive"
-                  // onClick={showValue}
-                />
-              </Col>
-
-              <Col className="border border-dark p-3 mb-2 mx-2">
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Underhand Pitch"
-                  value="Underhand Pitch"
-                  // onClick={showValue}
-                />
-              </Col>
-
-              <Col className="border border-dark p-3 mb-2 mx-2">
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Exclusive"
-                  value="Exclusive"
-                  // onClick={showValue}
-                />
-              </Col>
-
-              <Col className="border border-dark p-3 mb-2 mx-2">
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Exclusive"
-                  value="Exclusive"
-                  // onClick={showValue}
-                />
-              </Col>
-
-              <Col className="border border-dark p-3 mb-2 mx-2">
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Exclusive"
-                  value="Exclusive"
-                  // onClick={showValue}
-                />
-              </Col>
-
-              <Col className="border border-dark p-3 mb-2 mx-2">
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Exclusive"
-                  value="Exclusive"
-                  // onClick={showValue}
-                />
-              </Col>
+              <AnswerBox answer="Inclusive" />
+              <AnswerBox answer="Exclusive" />
             </Row>
           </FormGroup>
 
