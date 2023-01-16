@@ -5,7 +5,7 @@ import {QuizCard} from "./QuizListComponents/QuizCard";
 
 export const Quiz_list = () => {
   return (
-    <div className="vh-100" style={{backgroundColor: "lavender"}}>
+    <div className="vh-100 overflow-scroll" style={{backgroundColor: "lavender"}}>
       <MainNavbar />
 
       <h1 className="text-dark mt-5 p-3">Typescript</h1>

@@ -13,7 +13,7 @@ import { Logo } from "../../components/Logo";
 export const Quiz = () => {
   return (
     <div
-      className="vh-100 position-static"
+      className="vh-100 position-static overflow-scroll"
       style={{backgroundColor: "lavender"}}
     >
       <div className="d-flex justify-content-between p-3">

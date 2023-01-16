@@ -11,6 +11,3 @@ q9: string;
 q10: string;
 answer: string
 }
-
-let mapQuestions: questions[]  = [
-]
